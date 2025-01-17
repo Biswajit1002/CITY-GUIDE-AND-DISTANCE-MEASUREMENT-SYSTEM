@@ -1,1 +1,3 @@
 # CITY-GUIDE-AND-DISTANCE-MEASUREMENT-SYSTEM
+
+The objective of the project, named "City Guide and Distance Measurement System," is to develop a comprehensive platform that provides users with detailed information about city attractions, amenities, and services while also offering precise distance measurements between various locations within the city. This system aims to enhance the travel experience by enabling users to efficiently plan their routes and visits, ensuring they can make the most of their time in the city. Key features may include an interactive map, location-based recommendations, real-time distance calculations, and detailed descriptions of points of interest.
