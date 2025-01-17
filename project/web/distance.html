@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Distance form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<style>
+    body
+{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(31, 41, 58);
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: #0e2c26;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: cyan;
+    padding: 20px;
+    font-size: 30px;
+}
+label{
+    color: cyan;
+    font-size: 30px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: grey;
+}
+select{
+    font-size: 25px;
+}
+button{
+    font-size: 20px;
+}
+</style>
+<body>
+    <h2>Distance Calculator</h2><br>
+    <div class="login">
+    <form id="login" method="get" action="distance.jsp">
+        <label><b>Enter Current Location
+        </b>
+        </label>
+        <select name="c_destination" id="origin">
+            <option value="null">Select</option>
+            <option value="Baramunda">Baramunda</option>
+            <option value="Jaydev Vihar">Jaydev Vihar</option>
+            <option value="Vani Vihar">Vani Vihar</option>
+            <option value="Rasulgarh">Rasulgarh</option>
+            <option value="Palasuni">Palasuni</option>
+            <option value="Hasapal">Hasapal</option>
+            <option value="Nakhara">Nakhara</option>
+        </select>
+        <br><br>
+        <label><b>Enter Destination
+        </b>
+        </label>
+        <select name="destination" id="destination">
+            <option value="null">Select</option>
+            <option value="Dhauli">Dhauli</option>
+            <option value="Mukteswar">Mukteswar Temple</option>
+            <option value="Lingaraj">Lingaraj Temple</option>
+            <option value="Vivanta">Vivanta</option>
+            <option value="Lyfe">Lyfe Bhubaneswar</option>
+            <option value="ITC">ITC Hotel</option>
+        </select>
+        <br><br>
+        <label>
+            <button><b>Calculate</b></button>
+        </label><br>
+         <label>
+             <button>  <a href="parthahome.html">BACK</a></button>
+        </label>
+    </form>
+</div>
+</body>
+</html>

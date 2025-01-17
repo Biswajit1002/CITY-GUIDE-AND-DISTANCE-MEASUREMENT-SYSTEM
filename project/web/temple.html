@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color:#fff;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+  </style>
+
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQwTAQv4RwD2SwhOoFMMilErFWYQ1j-wv7oI0BxhpEbKVrPNIHe1A1C5ci0H_DVrxFiH1tROCXBdE8wQi6Ke7ADP5QmDDM2AN_d_XckCQ" alt="" class="image" alt="" class="image" />
+          <div class="image-data">
+            <span class="text"></span>
+            <h2>
+                Mukteswar  <br />
+              Temple
+            </h2>
+            <a href="temple1.html" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="https://i.pinimg.com/originals/1b/aa/85/1baa85ecdcc069167f9fcf8f8e29ad1e.webp" alt="" class="image" />
+          <div class="image-data">
+            <span class="text"></span>
+            <h2>
+              Dhauli <br />
+              Temple
+            </h2>
+            <a href="temple2.html" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="https://pragativadi.com/core/uploads/2021/08/E9h-bo7VgAUSgt9.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Making Our coffee with lover.</span>
+            <h2>
+                Lingaraj<br />
+                Temple
+            </h2>
+            <a href="temple3.html" class="button">About Us</a>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <center>
+        <button style="background-color: rgb(43, 226, 195);"><a href="parthahome.html">BACK</a></button>
+    </center>
+  </body>
+</html>
